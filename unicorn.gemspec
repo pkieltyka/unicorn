@@ -1,6 +1,7 @@
 # -*- encoding: binary -*-
 
-ENV["VERSION"] or abort "VERSION= must be specified"
+#ENV["VERSION"] or abort "VERSION= must be specified"
+VERSION = "1.0.1"
 manifest = File.readlines('.manifest').map! { |x| x.chomp! }
 
 # don't bother with tests that fork, not worth our time to get working
